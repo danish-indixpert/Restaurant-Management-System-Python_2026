@@ -1,0 +1,194 @@
+[2026-09-25 21:53:27.176493] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 21:55:34.134496] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 21:56:30.539698] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 21:57:24.183673] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 21:59:42.102301] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:00:48.296200] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:01:25.093427] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:01:49.723060] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:02:11.733698] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:02:42.241344] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:02:59.289703] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:03:18.216155] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:03:34.994523] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:03:51.426314] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:04:08.431703] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:04:30.525594] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:04:48.572964] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:05:07.669252] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:05:26.376014] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:06:00.330444] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:06:51.244645] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:07:23.618716] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:07:59.661616] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:08:21.857018] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:09:49.211307] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:10:23.881521] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-25 22:10:53.391028] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-26 08:09:17.924609] [WARNING]- Invalid Email and Password: S4d293778
+[2026-09-26 08:28:26.780537] [WARNING] - Create Order - Table ID:  Invalid Data
+[2026-09-26 08:29:37.786032] [WARNING] - View Order - order.json: Data is nout found
+[2026-09-26 10:21:58.192109] [WARNING] - Create Order - Table ID:  Invalid Data
+[2026-09-26 10:46:36.020270] [WARNING] - Create Order - Table ID:  Invalid Data
+[2026-09-26 10:46:47.129159] [WARNING] - View Order - order.json: Data is nout found
+[2026-09-26 10:50:52.298252] [WARNING] - View Pending Order - order.json: Data is not found
+[2026-09-26 10:50:52.300470] [WARNING] - View Pending Order - order.json: Data is not found
+[2026-09-26 10:50:52.306387] [WARNING] - View Pending Order - order.json: Data is not found
+[2026-09-26 10:53:27.842669] [WARNING] - View Complete Order - order.json: Order Data is not found
+[2026-09-26 10:53:27.844322] [WARNING] - View Complete Order - order.json: Order Data is not found
+[2026-09-26 10:53:27.845705] [WARNING] - View Complete Order - order.json: Order Data is not found
+[2026-09-26 11:43:18.332619] [WARNING] - View Order - order.json: Data is nout found
+[2026-09-26 11:44:39.374783] [WARNING] - View Order - order.json: Data is nout found
+[2026-09-26 13:38:57.570792] [WARNING]- Invalid Email and Password: bhupendra@gmail.com
+[2026-09-26 14:48:27.111828] [WARNING]- Invalid Email and Password: danish@gamil.com
+[2026-09-26 15:46:40.391502] [WARNING] -  Generate Bill - order.json: Order Data is not found
+[2026-09-26 15:46:40.393463] [WARNING] -  Generate Bill - order.json: Order Data is not found
+[2026-09-26 17:02:48.317025] [WARNING] -  Generate Bill - order.json: Order Data is not found
+[2026-09-26 17:02:48.318004] [WARNING] -  Generate Bill - order.json: Order Data is not found
+[2026-09-28 14:09:58.961083] [WARNING] - View All Bills - Bill Data is not found
+[2026-09-28 14:24:12.976121] [WARNING] - View All Bills - Bill Data is not found
+[2026-09-28 15:01:32.641035] [WARNING]- Invalid Email and Password: admin@gmail.com
+[2026-09-28 15:02:21.802792] [WARNING] - Cancel Table Booking - table_booking.json: Booking ID is not found
+[2026-09-29 12:09:02.095244] [WARNING] - Sighup Staff - Name - Alpha Value Only
+[2026-09-29 12:09:41.261343] [WARNING] - Sighup Staff - Password - Password must be at leasts 6 Digits
+[2026-09-29 12:10:14.436956] [WARNING] - View Inventory - inventory.json: Inventory Data is not found
+[2026-09-29 12:16:01.040592] [WARNING] - View Inventory - inventory.json: Inventory Data is not found
+[2026-09-29 20:05:15.831090] [WARNING] - Add Food - Food Name: Alpha Value Only
+[2026-09-29 20:08:10.873273] [WARNING] - Add Food - Food Name: Alpha Value Only
+[2026-09-29 20:54:17.210694] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-09-29 20:59:19.886455] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-09-29 21:00:21.741530] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-09-29 21:27:07.506484] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-09-29 21:32:33.472160] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-09-30 09:37:43.262106] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:42:12.406118] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:43:14.362647] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:43:47.335515] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:44:03.188207] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:44:19.690010] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:44:32.559248] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:44:45.063560] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:44:58.756392] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:45:10.834720] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:45:22.948979] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:45:32.065002] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:45:43.746278] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:46:12.084439] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 09:46:33.779163] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 10:25:12.338489] [WARNING] - Low Stockk Inventory - inventory.json: Inventory Data is not found
+[2026-09-30 10:25:28.977956] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-09-30 10:25:42.407175] [WARNING] - Low Stockk Inventory - inventory.json: Inventory Data is not found
+[2026-09-30 10:28:00.558779] [WARNING] - Low Stockk Inventory - inventory.json: Inventory Data is not found
+[2026-09-30 10:28:52.979248] [WARNING] - Low Stockk Inventory - inventory.json: Inventory Data is not found
+[2026-09-30 11:43:42.522418] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:08:07.286753] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:08:57.239438] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:09:58.711587] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:10:38.676253] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:11:20.249780] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:12:06.979941] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:13:52.850819] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:39:22.345053] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:40:45.251603] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:40:57.085713] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:41:13.709323] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 12:51:00.704228] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:16:59.139162] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:17:22.457242] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:22:52.466929] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-09-30 13:26:12.565914] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:26:30.512423] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:27:11.096357] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:27:21.270775] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:27:48.942079] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:28:03.831197] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:28:21.645908] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:28:33.041262] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:29:17.022460] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:29:28.130258] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:30:04.353076] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:30:13.227059] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:30:35.424656] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:30:49.085334] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:31:15.870477] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:31:48.181187] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:32:19.528501] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:32:30.401783] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:34:31.829314] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:34:39.705195] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:35:06.824618] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:35:26.791556] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:35:45.005819] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:35:53.933643] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:36:53.251184] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:37:06.196124] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:37:21.362337] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:37:33.710724] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:37:54.253545] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:38:02.108152] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:40:56.713305] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:41:12.444406] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 13:41:55.528260] [WARNING] - Update Food - food.json: Food Data is not found
+[2026-09-30 14:03:19.033217] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 14:04:24.634266] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 14:04:49.950749] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 15:20:59.272505] [WARNING] - Order History - order.json: Order Data is not found
+[2026-09-30 15:22:20.348577] [WARNING] - View Booking Table - table_booking.json: Table Booking Data is not found
+[2026-09-30 15:23:10.748839] [WARNING] - View Booking Table - table_booking.json: Table Booking Data is not found
+[2026-09-30 15:23:52.344765] [WARNING] - View Booking Table - table_booking.json: Table Booking Data is not found
+[2026-09-30 17:11:00.051262] [WARNING] - View Complete Order - order.json: Order Data is not found
+[2026-09-30 17:12:00.724664] [WARNING] - Cancel Table Booking - table_booking.json: Booking ID is not found
+[2026-09-30 17:20:00.311381] [WARNING] - Cancel Table Booking - table_booking.json: Booking ID is not found
+[2026-09-30 17:28:40.770316] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 17:33:08.602699] [WARNING] - View Table - table.json: Table Data is not found
+[2026-09-30 20:27:33.098967] [WARNING] - Cancel Table Booking - table_booking.json: Booking ID is not found
+[2026-09-30 21:25:15.578392] [WARNING] - View Pending Order - order.json: Data is not found
+[2026-09-30 21:28:05.557020] [WARNING] - View Bill - bill.json Bill Data is not found
+[2026-09-30 21:28:30.038334] [WARNING] - Bill History - bill.json: Bill Data is not found
+[2026-10-01 09:45:00.457088] [WARNING] - View Booking Table - table_booking.json: Table Booking Data is not found
+[2026-10-01 14:49:36.394890] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 15:00:52.974729] [WARNING] - Delete Table - table.json: Table Data is not found
+[2026-10-01 15:01:46.691636] [WARNING] - Update Table - table.json: Table Data is not found
+[2026-10-01 15:02:13.175885] [WARNING] - Update Table - table.json: Table Data is not found
+[2026-10-01 20:25:26.480853] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 20:25:28.863572] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 20:25:31.026414] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 20:25:47.251155] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 20:25:48.680463] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 20:26:09.892565] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 20:26:11.273348] [WARNING] - Add Table - Table Type: Alpha Value Only
+[2026-10-01 21:13:24.431007] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-10-01 21:31:53.149650] [WARNING] - Add Food - Half Size Price: Integer Value Only
+[2026-10-01 21:33:50.266223] [WARNING] - Add Food - Food Name: Alpha Value Only
+[2026-10-01 21:56:58.839298] [WARNING] - Add Food - Food Name: Alpha Value Only
+[2026-10-01 22:04:28.624185] [WARNING] - Table Booking - Table Type - Alpha Value Only
+[2026-10-01 22:39:20.286714] [WARNING] - Table Booking - Invalid Time
+[2026-10-02 10:02:41.324373] [WARNING]- Invalid Email and Password: user@gmail.com
+[2026-10-02 10:56:26.795457] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-10-02 10:58:13.642938] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-10-02 10:58:41.360536] [WARNING] - Update Inventory - New Inventory Quantity - Quantity Greater Than 0 Only
+[2026-10-02 10:58:57.983722] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-10-02 11:05:17.165604] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-10-02 11:07:15.111656] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-10-02 11:15:45.555757] [WARNING] - Out Of Stock Inventory - inventory.json: Out Of Stock Inventory Data is not found
+[2026-10-02 11:25:05.403883] [WARNING] - Add Food - Invalid Food Category
+[2026-10-02 11:26:19.332753] [WARNING] - Add Food - Invalid Food Category
+[2026-10-02 11:27:28.175916] [WARNING] - Add Food - Invalid Food Category
+[2026-10-02 11:28:00.937655] [WARNING] - Add Food - Invalid Food Category
+[2026-10-02 11:31:00.380666] [WARNING] - Add Table - Invalid Your Table Type
+[2026-10-02 11:31:19.574869] [WARNING] - Add Table - Invalid Your Table Type
+[2026-10-02 11:31:56.922726] [WARNING] - Signin Staff - Password - Integer Value Only
+[2026-10-02 11:34:06.648160] [WARNING] - Sighup Staff - Password - Integer Value Only
+[2026-10-02 11:34:06.545346] [WARNING] - Search Bill - Bill Data is not found
+[2026-10-03 10:56:16.213319] [WARNING] - Cancelled Order - order.json: Data is not found
+[2026-10-03 11:16:08.869303] [WARNING]- Invalid Email and Password: danish@gmai.com
+[2026-10-03 11:16:20.159969] [WARNING]- Invalid Email and Password: danish@gmail.com
+[2026-10-03 11:16:33.712101] [WARNING]- Invalid Email and Password: danish@gmail.com
+[2026-10-03 11:16:48.007157] [WARNING]- Invalid Email and Password: danish@gmail.com
+[2026-10-03 11:17:24.221386] [WARNING]- Invalid Email and Password: danish@gmail.com
+[2026-10-03 11:19:33.691531] [WARNING] - Sighup Staff - Password - Password must be at leasts 6 Digits
+[2026-10-03 11:25:17.113379] [WARNING] - Cancel Table Booking - Table is not Booked
+[2026-10-03 11:32:00.581542] [WARNING] - Cancel Table Booking - Table is not Booked
+[2026-10-03 11:48:48.901493] [WARNING] - Table Booking - Table ID - Alpha Number Value Only
+[2026-10-03 12:18:23.518450] [WARNING]- Invalid Email and Password: user@gmail.com[2026-10-05 12:52:11.950832] [WARNING] - Create Order - Category - Invalid Food Category
+[2026-10-05 12:55:01.641220] [WARNING] - Create Order - Category - Invalid Food Category

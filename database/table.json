@@ -1,0 +1,369 @@
+{
+    "Small": [
+        {
+            "table_id": "T8ae",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T38d",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T0c7",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Td05",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T05f",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Td3c",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tb9e",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T837",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T179",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T367",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tcb0",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tf52",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T839",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T043",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T8fd",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Te1b",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T4d9",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T022",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "Te2a",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        },
+        {
+            "table_id": "T86a",
+            "table_type": "Small",
+            "table_capacity": 4,
+            "status": "Available"
+        }
+    ],
+    "Medium": [
+        {
+            "table_id": "Tde0",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tac3",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Ta33",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tf83",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T992",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T5b2",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T375",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T08f",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T86e",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T4e8",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T68a",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T57a",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T68e",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tbbe",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Ta02",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Teb8",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T1e7",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tefe",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "Td50",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        },
+        {
+            "table_id": "T0dc",
+            "table_type": "Medium",
+            "table_capacity": 6,
+            "status": "Available"
+        }
+    ],
+    "Vip": [
+        {
+            "table_id": "T35d",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T0f0",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T0af",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tb34",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "Teaa",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T74c",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T957",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T553",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T88e",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tb40",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T5da",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T0d7",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "Taae",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T142",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T192",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "Td48",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "Tbcd",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T705",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T159",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        },
+        {
+            "table_id": "T79f",
+            "table_type": "Vip",
+            "table_capacity": 10,
+            "status": "Available"
+        }
+    ],
+    "Booking_Table": []
+}

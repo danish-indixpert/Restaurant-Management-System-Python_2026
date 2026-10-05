@@ -1,0 +1,782 @@
+{
+    "Chinese": [
+        {
+            "id": "F749",
+            "category": "Chinese",
+            "food_name": "Paneer Momos Fried",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "F0c3",
+            "category": "Chinese",
+            "food_name": "Hakka Noodles",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "F97e",
+            "category": "Chinese",
+            "food_name": "Chowmein",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "Ff59",
+            "category": "Chinese",
+            "food_name": "Fried Rice",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "F5b4",
+            "category": "Chinese",
+            "food_name": "Chilli Paneer",
+            "half_size_price": 160,
+            "full_size_price": 290
+        },
+        {
+            "id": "Fa89",
+            "category": "Chinese",
+            "food_name": "Chilli Potato",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "Fd6c",
+            "category": "Chinese",
+            "food_name": "Fried Momos",
+            "half_size_price": 100,
+            "full_size_price": 180
+        },
+        {
+            "id": "F200",
+            "category": "Chinese",
+            "food_name": "Spring Roll",
+            "half_size_price": 100,
+            "full_size_price": 180
+        },
+        {
+            "id": "Fe2f",
+            "category": "Chinese",
+            "food_name": "Veg Soup",
+            "half_size_price": 90,
+            "full_size_price": 160
+        },
+        {
+            "id": "Fd36",
+            "category": "Chinese",
+            "food_name": "Veg Noodles",
+            "half_size_price": 140,
+            "full_size_price": 250
+        },
+        {
+            "id": "Fcfd",
+            "category": "Chinese",
+            "food_name": "Paneer Momos Steam",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "Feeb",
+            "category": "Chinese",
+            "food_name": "Chinese Bhel",
+            "half_size_price": 120,
+            "full_size_price": 220
+        },
+        {
+            "id": "F933",
+            "category": "Chinese",
+            "food_name": "Honey Chilli Potato",
+            "half_size_price": 140,
+            "full_size_price": 250
+        },
+        {
+            "id": "Fe22",
+            "category": "Chinese",
+            "food_name": "Crispy Corn",
+            "half_size_price": 150,
+            "full_size_price": 270
+        },
+        {
+            "id": "F8b8",
+            "category": "Chinese",
+            "food_name": "Paneer Fry Rice",
+            "half_size_price": 140,
+            "full_size_price": 250
+        },
+        {
+            "id": "Fede",
+            "category": "Chinese",
+            "food_name": "Paneer Manchurian",
+            "half_size_price": 160,
+            "full_size_price": 290
+        },
+        {
+            "id": "F904",
+            "category": "Chinese",
+            "food_name": "Cheese Chilli",
+            "half_size_price": 180,
+            "full_size_price": 320
+        },
+        {
+            "id": "F44d",
+            "category": "Chinese",
+            "food_name": "Chilli Momos",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "F382",
+            "category": "Chinese",
+            "food_name": "Manchurian Momos",
+            "half_size_price": 150,
+            "full_size_price": 260
+        },
+        {
+            "id": "F5be",
+            "category": "Chinese",
+            "food_name": "Chinese Paneer Roll",
+            "half_size_price": 160,
+            "full_size_price": 280
+        }
+    ],
+    "Fast Food": [
+        {
+            "id": "F37f",
+            "category": "Fast Food",
+            "food_name": "Veg Burger",
+            "half_size_price": 120,
+            "full_size_price": 200
+        },
+        {
+            "id": "F600",
+            "category": "Fast Food",
+            "food_name": "Cheese Burger",
+            "half_size_price": 150,
+            "full_size_price": 240
+        },
+        {
+            "id": "Ffad",
+            "category": "Fast Food",
+            "food_name": "Paneer Burger",
+            "half_size_price": 160,
+            "full_size_price": 260
+        },
+        {
+            "id": "F9b8",
+            "category": "Fast Food",
+            "food_name": "Double Cheese Burger",
+            "half_size_price": 180,
+            "full_size_price": 300
+        },
+        {
+            "id": "Fee7",
+            "category": "Fast Food",
+            "food_name": "Veg Pizza",
+            "half_size_price": 180,
+            "full_size_price": 320
+        },
+        {
+            "id": "F449",
+            "category": "Fast Food",
+            "food_name": "Cheese Pizza",
+            "half_size_price": 200,
+            "full_size_price": 350
+        },
+        {
+            "id": "F28e",
+            "category": "Fast Food",
+            "food_name": "Paneer Pizza",
+            "half_size_price": 220,
+            "full_size_price": 380
+        },
+        {
+            "id": "F460",
+            "category": "Fast Food",
+            "food_name": "Cheese Fries",
+            "half_size_price": 150,
+            "full_size_price": 240
+        },
+        {
+            "id": "Fc78",
+            "category": "Fast Food",
+            "food_name": "Masala Fries",
+            "half_size_price": 120,
+            "full_size_price": 190
+        },
+        {
+            "id": "F0ed",
+            "category": "Fast Food",
+            "food_name": "Paneer Roll",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "Fcd2",
+            "category": "Fast Food",
+            "food_name": "Veg Roll",
+            "half_size_price": 120,
+            "full_size_price": 200
+        },
+        {
+            "id": "Faca",
+            "category": "Fast Food",
+            "food_name": "Cheese Roll",
+            "half_size_price": 140,
+            "full_size_price": 230
+        },
+        {
+            "id": "F3df",
+            "category": "Fast Food",
+            "food_name": "Paneer Sandwich",
+            "half_size_price": 150,
+            "full_size_price": 250
+        },
+        {
+            "id": "F685",
+            "category": "Fast Food",
+            "food_name": "Cheese Sandwich",
+            "half_size_price": 140,
+            "full_size_price": 230
+        },
+        {
+            "id": "F953",
+            "category": "Fast Food",
+            "food_name": "Veg Pasta",
+            "half_size_price": 160,
+            "full_size_price": 280
+        },
+        {
+            "id": "F144",
+            "category": "Fast Food",
+            "food_name": "Cheese Pasta",
+            "half_size_price": 200,
+            "full_size_price": 350
+        },
+        {
+            "id": "F342",
+            "category": "Fast Food",
+            "food_name": "White Sauce Pasta",
+            "half_size_price": 180,
+            "full_size_price": 320
+        },
+        {
+            "id": "F816",
+            "category": "Fast Food",
+            "food_name": "Red Sauce Past",
+            "half_size_price": 170,
+            "full_size_price": 300
+        },
+        {
+            "id": "F7b9",
+            "category": "Fast Food",
+            "food_name": "Pink Sauce Pasta",
+            "half_size_price": 190,
+            "full_size_price": 330
+        }
+    ],
+    "Italian": [
+        {
+            "id": "F1cb",
+            "category": "Italian",
+            "food_name": "Cheese Pizza",
+            "half_size_price": 120,
+            "full_size_price": 220
+        },
+        {
+            "id": "F77e",
+            "category": "Italian",
+            "food_name": "White Sauce Pasta",
+            "half_size_price": 100,
+            "full_size_price": 180
+        },
+        {
+            "id": "F019",
+            "category": "Italian",
+            "food_name": "Corn Pizza",
+            "half_size_price": 110,
+            "full_size_price": 200
+        },
+        {
+            "id": "F8b7",
+            "category": "Italian",
+            "food_name": "Red Sauce Pasta",
+            "half_size_price": 100,
+            "full_size_price": 180
+        },
+        {
+            "id": "Ffc7",
+            "category": "Italian",
+            "food_name": "Paneer Pizza",
+            "half_size_price": 130,
+            "full_size_price": 230
+        },
+        {
+            "id": "Fd80",
+            "category": "Italian",
+            "food_name": "Veg Pasta",
+            "half_size_price": 100,
+            "full_size_price": 180
+        },
+        {
+            "id": "F022",
+            "category": "Italian",
+            "food_name": "Cheese Pasta",
+            "half_size_price": 120,
+            "full_size_price": 220
+        },
+        {
+            "id": "Fc38",
+            "category": "Italian",
+            "food_name": "Tomato Pasta",
+            "half_size_price": 100,
+            "full_size_price": 180
+        },
+        {
+            "id": "Fdb7",
+            "category": "Italian",
+            "food_name": "Creamy Pasta",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "F8db",
+            "category": "Italian",
+            "food_name": "Cheese Bread",
+            "half_size_price": 90,
+            "full_size_price": 150
+        },
+        {
+            "id": "F633",
+            "category": "Italian",
+            "food_name": "Tomato Soup",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F1f2",
+            "category": "Italian",
+            "food_name": "Cream Soup",
+            "half_size_price": 70,
+            "full_size_price": 120
+        },
+        {
+            "id": "F064",
+            "category": "Italian",
+            "food_name": "Cheese Corn",
+            "half_size_price": 90,
+            "full_size_price": 150
+        },
+        {
+            "id": "F77f",
+            "category": "Italian",
+            "food_name": "Veg Soup",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F528",
+            "category": "Italian",
+            "food_name": "Veg Sandwich",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F550",
+            "category": "Italian",
+            "food_name": "Cheese Sandwich",
+            "half_size_price": 80,
+            "full_size_price": 140
+        },
+        {
+            "id": "Fda5",
+            "category": "Italian",
+            "food_name": "Cheese Potato",
+            "half_size_price": 90,
+            "full_size_price": 160
+        },
+        {
+            "id": "F0ad",
+            "category": "Italian",
+            "food_name": "Cheese Fingers",
+            "half_size_price": 90,
+            "full_size_price": 150
+        },
+        {
+            "id": "Fa8e",
+            "category": "Italian",
+            "food_name": "Cheese Roll",
+            "half_size_price": 80,
+            "full_size_price": 140
+        },
+        {
+            "id": "F6b6",
+            "category": "Italian",
+            "food_name": "Veg Fingers",
+            "half_size_price": 80,
+            "full_size_price": 140
+        }
+    ],
+    "North Indian": [
+        {
+            "id": "Fb99",
+            "category": "North Indian",
+            "food_name": "Shahi Paneer",
+            "half_size_price": 180,
+            "full_size_price": 320
+        },
+        {
+            "id": "Ffd8",
+            "category": "North Indian",
+            "food_name": "Kadai Paneer",
+            "half_size_price": 170,
+            "full_size_price": 300
+        },
+        {
+            "id": "F939",
+            "category": "North Indian",
+            "food_name": "Palak Paneer",
+            "half_size_price": 160,
+            "full_size_price": 280
+        },
+        {
+            "id": "F711",
+            "category": "North Indian",
+            "food_name": "Dal Tadka",
+            "half_size_price": 110,
+            "full_size_price": 190
+        },
+        {
+            "id": "Fd50",
+            "category": "North Indian",
+            "food_name": "Dal Makhani",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "Fe53",
+            "category": "North Indian",
+            "food_name": "Chole",
+            "half_size_price": 110,
+            "full_size_price": 190
+        },
+        {
+            "id": "F0d5",
+            "category": "North Indian",
+            "food_name": "Rajma",
+            "half_size_price": 110,
+            "full_size_price": 190
+        },
+        {
+            "id": "Fe6e",
+            "category": "North Indian",
+            "food_name": "Mix Veg",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "F659",
+            "category": "North Indian",
+            "food_name": "Aloo Gobi",
+            "half_size_price": 110,
+            "full_size_price": 190
+        },
+        {
+            "id": "F6ef",
+            "category": "North Indian",
+            "food_name": "Butter Naan",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F08d",
+            "category": "North Indian",
+            "food_name": "Dum Aloo",
+            "half_size_price": 150,
+            "full_size_price": 260
+        },
+        {
+            "id": "F571",
+            "category": "North Indian",
+            "food_name": "Lachha Paratha",
+            "half_size_price": 70,
+            "full_size_price": 120
+        },
+        {
+            "id": "Fd00",
+            "category": "North Indian",
+            "food_name": "Tandoori Roti",
+            "half_size_price": 40,
+            "full_size_price": 70
+        },
+        {
+            "id": "Fc37",
+            "category": "North Indian",
+            "food_name": "Malai Kofta",
+            "half_size_price": 200,
+            "full_size_price": 350
+        },
+        {
+            "id": "Fb95",
+            "category": "North Indian",
+            "food_name": "Jeera Rice",
+            "half_size_price": 110,
+            "full_size_price": 190
+        },
+        {
+            "id": "Fb8d",
+            "category": "North Indian",
+            "food_name": "Matar Paneer",
+            "half_size_price": 180,
+            "full_size_price": 310
+        },
+        {
+            "id": "Fc4d",
+            "category": "North Indian",
+            "food_name": "Dal Fry",
+            "half_size_price": 110,
+            "full_size_price": 190
+        },
+        {
+            "id": "Fba4",
+            "category": "North Indian",
+            "food_name": "Bhindi Masala",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "Fe16",
+            "category": "North Indian",
+            "food_name": "Aloo Palak",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "F590",
+            "category": "North Indian",
+            "food_name": "Paneer Handi",
+            "half_size_price": 200,
+            "full_size_price": 350
+        },
+        {
+            "id": "Ff3d",
+            "category": "North Indian",
+            "food_name": "Dahi Bhindi",
+            "half_size_price": 150,
+            "full_size_price": 260
+        },
+        {
+            "id": "F10a",
+            "category": "North Indian",
+            "food_name": "Dahi Paneer",
+            "half_size_price": 170,
+            "full_size_price": 300
+        },
+        {
+            "id": "F733",
+            "category": "North Indian",
+            "food_name": "Aloo Dahi",
+            "half_size_price": 120,
+            "full_size_price": 210
+        },
+        {
+            "id": "F409",
+            "category": "North Indian",
+            "food_name": "Chana Masala",
+            "half_size_price": 120,
+            "full_size_price": 220
+        },
+        {
+            "id": "Fd22",
+            "category": "North Indian",
+            "food_name": "Chana Paneer",
+            "half_size_price": 180,
+            "full_size_price": 310
+        },
+        {
+            "id": "F9f1",
+            "category": "North Indian",
+            "food_name": "Chana Palak",
+            "half_size_price": 150,
+            "full_size_price": 160
+        },
+        {
+            "id": "F300",
+            "category": "North Indian",
+            "food_name": "Tawa Paneer",
+            "half_size_price": 200,
+            "full_size_price": 350
+        },
+        {
+            "id": "F6a5",
+            "category": "North Indian",
+            "food_name": "Paneer Tikka",
+            "half_size_price": 130,
+            "full_size_price": 380
+        },
+        {
+            "id": "Fd84",
+            "category": "North Indian",
+            "food_name": "Paneer Malai Tikka",
+            "half_size_price": 250,
+            "full_size_price": 420
+        },
+        {
+            "id": "F264",
+            "category": "North Indian",
+            "food_name": "Dal Jeera",
+            "half_size_price": 120,
+            "full_size_price": 140
+        },
+        {
+            "id": "Fdfe",
+            "category": "North Indian",
+            "food_name": "Dal Palak",
+            "half_size_price": 130,
+            "full_size_price": 230
+        },
+        {
+            "id": "Fe41",
+            "category": "North Indian",
+            "food_name": "Paneer Kofta",
+            "half_size_price": 200,
+            "full_size_price": 350
+        },
+        {
+            "id": "F5e6",
+            "category": "North Indian",
+            "food_name": "Mix Dal Fry",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "F859",
+            "category": "North Indian",
+            "food_name": "Paneer Pulao",
+            "half_size_price": 160,
+            "full_size_price": 280
+        }
+    ],
+    "Beverage": [
+        {
+            "id": "Ff0c",
+            "category": "Beverage",
+            "food_name": "Tea",
+            "half_size_price": 50,
+            "full_size_price": 80
+        },
+        {
+            "id": "Fcf1",
+            "category": "Beverage",
+            "food_name": "Coffee",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F15f",
+            "category": "Beverage",
+            "food_name": "Cold Coffee",
+            "half_size_price": 130,
+            "full_size_price": 220
+        },
+        {
+            "id": "Fd3c",
+            "category": "Beverage",
+            "food_name": "Chocolate Shake",
+            "half_size_price": 140,
+            "full_size_price": 140
+        },
+        {
+            "id": "F536",
+            "category": "Beverage",
+            "food_name": "Vanilla Shake",
+            "half_size_price": 130,
+            "full_size_price": 220
+        },
+        {
+            "id": "Fa8e",
+            "category": "Beverage",
+            "food_name": "Mango Shake",
+            "half_size_price": 130,
+            "full_size_price": 220
+        },
+        {
+            "id": "F6f5",
+            "category": "Beverage",
+            "food_name": "Banana Shake",
+            "half_size_price": 120,
+            "full_size_price": 200
+        },
+        {
+            "id": "Fe56",
+            "category": "Beverage",
+            "food_name": "Strawberry Shake",
+            "half_size_price": 140,
+            "full_size_price": 240
+        },
+        {
+            "id": "F755",
+            "category": "Beverage",
+            "food_name": "Sweet Lassi",
+            "half_size_price": 90,
+            "full_size_price": 150
+        },
+        {
+            "id": "F423",
+            "category": "Beverage",
+            "food_name": "Mango Lassi",
+            "half_size_price": 100,
+            "full_size_price": 170
+        },
+        {
+            "id": "F80a",
+            "category": "Beverage",
+            "food_name": "Green Tea",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F404",
+            "category": "Beverage",
+            "food_name": "Orange Juice",
+            "half_size_price": 120,
+            "full_size_price": 190
+        },
+        {
+            "id": "Fc70",
+            "category": "Beverage",
+            "food_name": "Apple Juice",
+            "half_size_price": 130,
+            "full_size_price": 210
+        },
+        {
+            "id": "Faad",
+            "category": "Beverage",
+            "food_name": "Pineapplce Juice",
+            "half_size_price": 120,
+            "full_size_price": 190
+        },
+        {
+            "id": "Ff0c",
+            "category": "Beverage",
+            "food_name": "Cold Drink",
+            "half_size_price": 60,
+            "full_size_price": 100
+        },
+        {
+            "id": "F375",
+            "category": "Beverage",
+            "food_name": "Badam Milk",
+            "half_size_price": 130,
+            "full_size_price": 210
+        },
+        {
+            "id": "F66e",
+            "category": "Beverage",
+            "food_name": "Bisleri Water Bottle",
+            "half_size_price": 20,
+            "full_size_price": 30
+        }
+    ]
+}

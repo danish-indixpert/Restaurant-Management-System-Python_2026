@@ -1,0 +1,27 @@
+[
+    {
+        "bill_id": "B6e8",
+        "order_id": "Oc7f",
+        "customer_id": "Cdfaa9b23-",
+        "customer_name": "danish",
+        "table_id": "T992",
+        "order_items": [
+            {
+                "category": "North Indian",
+                "food_name": "Shahi Paneer",
+                "size": "Half Size Price",
+                "price": 180,
+                "quantity": 1,
+                "total_amount": 180
+            }
+        ],
+        "gst": "5%",
+        "gst_amount": 9.0,
+        "total_amount": 189.0,
+        "payment_method": "Phone Pay",
+        "payment_status": "Paid",
+        "order_status": "Complete",
+        "date": "05-10-2026",
+        "time": "12:57:PM"
+    }
+]

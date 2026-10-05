@@ -1,0 +1,189 @@
+[
+    {
+        "inventory_id": "Ibe6",
+        "inventory_name": "Aata",
+        "inventory_category": "Grains",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 400,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "02:02:PM"
+    },
+    {
+        "inventory_id": "I293",
+        "inventory_name": "Rice",
+        "inventory_category": "Grains",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 500,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "02:58:PM"
+    },
+    {
+        "inventory_id": "Ib26",
+        "inventory_name": "Maida",
+        "inventory_category": "Grains",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 430,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "02:58:PM"
+    },
+    {
+        "inventory_id": "Ie70",
+        "inventory_name": "Poha",
+        "inventory_category": "Grains",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 300,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:00:PM"
+    },
+    {
+        "inventory_id": "Id82",
+        "inventory_name": "Besan",
+        "inventory_category": "Grains",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 300,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:01:PM"
+    },
+    {
+        "inventory_id": "Ia92",
+        "inventory_name": "Paneer",
+        "inventory_category": "Dairy",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 1500,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:04:PM"
+    },
+    {
+        "inventory_id": "I309",
+        "inventory_name": "Butter",
+        "inventory_category": "Dairy",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 2000,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:04:PM"
+    },
+    {
+        "inventory_id": "If37",
+        "inventory_name": "Milk",
+        "inventory_category": "Dairy",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "litre",
+        "inventory_price": 600,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:05:PM"
+    },
+    {
+        "inventory_id": "I2c4",
+        "inventory_name": "Khoya",
+        "inventory_category": "Dairy",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 1500,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:05:PM"
+    },
+    {
+        "inventory_id": "I2f9",
+        "inventory_name": "Ghee",
+        "inventory_category": "Dairy",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "litre",
+        "inventory_price": 3000,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:06:PM"
+    },
+    {
+        "inventory_id": "Ib45",
+        "inventory_name": "Onion",
+        "inventory_category": "Vegetables",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 400,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:07:PM"
+    },
+    {
+        "inventory_id": "If4f",
+        "inventory_name": "Potato",
+        "inventory_category": "Vegetables",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 300,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:08:PM"
+    },
+    {
+        "inventory_id": "Ia58",
+        "inventory_name": "Tomato",
+        "inventory_category": "Vegetables",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 400,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:09:PM"
+    },
+    {
+        "inventory_id": "Ie28",
+        "inventory_name": "Carrot",
+        "inventory_category": "Vegetables",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 300,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:09:PM"
+    },
+    {
+        "inventory_id": "Ifb3",
+        "inventory_name": "Ginger",
+        "inventory_category": "Vegetables",
+        "inventory_quantity": 5.0,
+        "inventory_unit": "kg",
+        "inventory_price": 600,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:10:PM"
+    },
+    {
+        "inventory_id": "Ia53",
+        "inventory_name": "Bread",
+        "inventory_category": "Bakery",
+        "inventory_quantity": 10.0,
+        "inventory_unit": "kg",
+        "inventory_price": 500,
+        "inventory_stock_status": "In Stock",
+        "inventory_date": "29-09-2026",
+        "inventory_time": "03:14:PM"
+    },
+    {
+        "inventory_id": "I962",
+        "inventory_name": "Oil",
+        "inventory_category": "Grocry",
+        "inventory_quantity": 1.0,
+        "inventory_unit": "litre",
+        "inventory_price": 800,
+        "inventory_stock_status": "Low Stock",
+        "inventory_date": "02-10-2026",
+        "inventory_time": "10:55:AM"
+    }
+]
