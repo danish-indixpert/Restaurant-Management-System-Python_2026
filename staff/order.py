@@ -61,10 +61,11 @@ class Order_Staff:
                 for table in tables:
                     if table["table_id"]==table_id:
                         if table["status"]=="Booked":
-                            print("Table is Booked")
+                            with open("logs/war.log",'a') as already:
+                                already.write(f"[{str(datetime.now())}] [WARNING] - Create Order - Table is Already Booked\n")
+                            print("Table is Already Booked")
                             return
                         elif table["status"]=="Available":
-                            print("Table is Available")
                             break
             order_items=[]
             total_amount=0
@@ -102,14 +103,17 @@ class Order_Staff:
                         with open("logs/war.log",'a') as food_name_error:
                             food_name_error.write(f"[{str(datetime.now())}] [WARNING] - Create Order - Food Name - Maximum 3 Character Allow\n")
                         print("Maximum 3 Character Allow")
+                food_not_found=0
                 for food in category_data:
                     if food["food_name"].lower()==food_name.lower():
+                        food_not_found=1
                         break
                 else:
                     with open("logs/war.log",'a') as food_found:
                         food_found.write(f"[{str(datetime.now())}] [WARNING] - Create Order - Food not found\n")
                     print("Food Not found")
-                    return
+                if food_not_found==0:
+                    continue
                 print("============================================================")
                 print("*                         Food Size                        *")
                 print("============================================================")
@@ -297,7 +301,13 @@ class Order_Staff:
             for i in cancel_data:
                 if i["order_id"]==order_id:
                     count+=1
-                    i["order_status"]="Cancelled"
+                    if i["order_status"]=="Pending":
+                        i["order_status"]="Cancelled"
+                    else:
+                        with open("logs/war.log",'a') as called:
+                            called.write(f"[{str(datetime.now())}] [WARNING] - Cancel Order - Order Cannot be Cancelled\n")
+                        print("Order Cannot be Cancelled")
+                        return
                     with open("database/order.json",'w') as remove_file:
                         json.dump(cancel_data,remove_file,indent=4)
                     with open("logs/order.log",'a') as cancel_data_error:
@@ -455,9 +465,14 @@ class Order_Staff:
                 if category == "Booking_Table":
                     continue
                 for table in table_data[category]:
-                    if table["status"] == "Available":
-                        table_count += 1
-                        if table["table_id"]==table_id:
+                    if table["table_id"] == table_id:
+                        if table["status"] == "Booked":
+                            with open("logs/war.log",'a') as booked:
+                                booked.write(f"[{str(datetime.now())}] [WARNING] - Table Booking - Table is Already Booked\n")
+                            print("Table is Already Booked")
+                            return
+                        if table["status"] == "Available":
+                            table_count += 1
                             while True:
                                 table_type=input("Enter Booking Table Type: ").strip()
                                 if len(table_type)>2:
@@ -490,16 +505,26 @@ class Order_Staff:
                                 date=input("Enter Table Booking Date: ")
                                 try:
                                     booking_date=datetime.strptime(date,"%d-%m-%Y")
-                                    break
+                                    if booking_date.date()<datetime.now().date():
+                                        with open("logs/war.log",'a') as back_time:
+                                            back_time.write(f"[{str(datetime.now())}] [WARNING] - Table Booking - Booking Date - Back Date is Not Allow\n")
+                                        print("Back Date is Not Allow")
+                                    else:
+                                        break
                                 except ValueError:
                                     with open("logs/war.log",'a') as invalid_date:
-                                        invalid_date.write(f"[{str(datetime.now())}] [WARNING] - Table Booking - Date- Invalid Date\n")
+                                        invalid_date.write(f"[{str(datetime.now())}] [WARNING] - Table Booking - Date - Invalid Date\n")
                                     print("Invalid Date")
                             while True:
                                 time=input("Enter Table Booking Time: ")
                                 try:
                                     booking_time=datetime.strptime(time,"%I:%M %p")
-                                    break
+                                    if booking_time.time()<datetime.now().time():
+                                        with open("logs/war.log",'a') as back_time_error:
+                                            back_time_error.write(f"[{str(datetime.now())}] [WARNING] - Table Booking - Booking Time - Back Time is Not Allow\n")
+                                        print("Back Time is Not Allow")
+                                    else:
+                                        break
                                 except ValueError:
                                     with open("logs/war.log",'a') as invalid_time:
                                         invalid_time.write(f"[{str(datetime.now())}] [WARNING] - Table Booking - Invalid Time\n")
@@ -591,6 +616,26 @@ class Order_Staff:
                 error.write(f"[{str(datetime.now())}] [ERROR] - Cancel Table Booking - table.json: File is not found\n")
             print("Data is not found")
             return
+    def veiw_booked_table(self):
+        try:
+            with open("database/table.json",'r') as file:
+                view_booked_table_data=json.load(file)
+            print("Table ID               Customer Name                 Booking Date                 Start Time                 End Time")
+            print("---------------------------------------------------------------------------------------------------------------------")
+            table_count=0
+            for i in view_booked_table_data["Booking_Table"]:
+                if i["status"]=="Booked":
+                    table_count+=1
+                    print(str(table_count).ljust(3),i["table_id"].ljust(21),i["customer_name"].ljust(28) +str(i["date"]).ljust(28),str(i["start_time"]).ljust(14),str(i["end_time"]))
+            if table_count==0:
+                with open("logs/war.log",'a') as war_log:
+                    war_log.write(f"[{str(datetime.now())}] [WARNING] - View Booked Table - table.json: Table Data is not found\n")
+                print("Table Data is not found")
+        except FileNotFoundError:
+            with open("logs/error.log",'a') as error_log:
+                error_log.write(f"[{str(datetime.now())}] [ERROR] - Veiw Booked Table - table.json: File is not found\n")
+            print("Data is not found")
+            return
     def table_menu(self):
         while True:
             print("===========================================================")
@@ -598,13 +643,16 @@ class Order_Staff:
             print("===========================================================")
             print("1. Table Booking")
             print("2. Cancel Table Booking")
-            print("3. Back")
+            print("3. View Booked Table")
+            print("4. Back")
             choice=input("Enter Your Choice: ")
             if choice=="1":
                 self.table_booking()
             elif choice=="2":
                 self.cancel_table_booking()
             elif choice=="3":
+                self.veiw_booked_table()
+            elif choice=="4":
                 print("Program Back Successful")
                 break
             else:

@@ -457,7 +457,7 @@
         {
             "id": "Fe53",
             "category": "North Indian",
-            "food_name": "Chole",
+            "food_name": "Chole Chawal",
             "half_size_price": 110,
             "full_size_price": 190
         },
@@ -628,13 +628,6 @@
             "food_name": "Dal Jeera",
             "half_size_price": 120,
             "full_size_price": 140
-        },
-        {
-            "id": "Fdfe",
-            "category": "North Indian",
-            "food_name": "Dal Palak",
-            "half_size_price": 130,
-            "full_size_price": 230
         },
         {
             "id": "Fe41",

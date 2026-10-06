@@ -109,3 +109,8 @@
 [2026-10-03 11:21:56.671585] [INFO] - Cancel Table Booking - Table Booking Cancel Successful
 [2026-10-03 11:33:52.187378] [INFO] - Table Booking - Table Booked Successful
 [2026-10-03 11:34:35.722879] [INFO] - Cancel Table Booking - Table Booking Cancel Successful
+[2026-10-05 13:54:34.993756] [INFO] - Table Booking - Table Booked Successful
+[2026-10-06 07:54:04.357513] [WARNING] - Create Order - Table is Available
+[2026-10-06 10:32:07.879017] [INFO] - Cancel Table Booking - Table Booking Cancel Successful
+[2026-10-06 11:36:09.526702] [WARNING] - Create Order - Table is Available
+[2026-10-06 11:53:15.218332] [INFO] - Table Booking - Table Booked Successful

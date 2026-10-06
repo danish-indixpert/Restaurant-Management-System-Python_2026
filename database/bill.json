@@ -23,5 +23,38 @@
         "order_status": "Complete",
         "date": "05-10-2026",
         "time": "12:57:PM"
+    },
+    {
+        "bill_id": "Be6f",
+        "order_id": "Obde",
+        "customer_id": "C073ed61e-",
+        "customer_name": "danish",
+        "table_id": "T957",
+        "order_items": [
+            {
+                "category": "Beverage",
+                "food_name": "Tea",
+                "size": "Full Size Price",
+                "price": 80,
+                "quantity": 2,
+                "total_amount": 160
+            },
+            {
+                "category": "North Indian",
+                "food_name": "Shahi Paneer",
+                "size": "Full Size Price",
+                "price": 320,
+                "quantity": 2,
+                "total_amount": 640
+            }
+        ],
+        "gst": "5%",
+        "gst_amount": 40.0,
+        "total_amount": 840.0,
+        "payment_method": "UPI",
+        "payment_status": "Paid",
+        "order_status": "Complete",
+        "date": "05-10-2026",
+        "time": "02:03:PM"
     }
 ]

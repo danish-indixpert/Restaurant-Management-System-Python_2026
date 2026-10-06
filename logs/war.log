@@ -192,3 +192,16 @@
 [2026-10-03 11:48:48.901493] [WARNING] - Table Booking - Table ID - Alpha Number Value Only
 [2026-10-03 12:18:23.518450] [WARNING]- Invalid Email and Password: user@gmail.com[2026-10-05 12:52:11.950832] [WARNING] - Create Order - Category - Invalid Food Category
 [2026-10-05 12:55:01.641220] [WARNING] - Create Order - Category - Invalid Food Category
+[2026-10-05 13:48:22.812526] [WARNING] - Add Food - Food Already Added
+[2026-10-05 14:01:33.096949] [WARNING] - Create Order - Food not found
+[2026-10-05 14:05:22.291822] [WARNING] - Update Order - order.json: Order Data is not found
+[2026-10-06 07:55:17.407995] [WARNING] - Create Order - Food not found
+[2026-10-06 08:50:57.013178] [WARNING]- Invalid Email and Password: danish@gmail.com
+[2026-10-06 10:40:25.131905] [WARNING] - Update Order - order.json: Order Data is not found
+[2026-10-06 11:22:52.316042] [WARNING] - Table Booking - Table ID - Maximum 3 Character or Number Allow
+[2026-10-06 11:23:24.508789] [WARNING] - Table Booking - Booking Date - Back Date is Not Allow
+[2026-10-06 11:35:41.589558] [WARNING] - Create Order - Category - Invalid Food Category
+[2026-10-06 11:38:18.541710] [WARNING] - Create Order - Food not found
+[2026-10-06 11:44:20.565936] [WARNING] - Create Order - Food not found
+[2026-10-06 11:46:35.788121] [WARNING] - Table Booking - Invalid Time
+[2026-10-06 11:53:37.211493] [WARNING] - Table Booking - Table is Already Booked
