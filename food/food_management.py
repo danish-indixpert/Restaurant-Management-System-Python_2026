@@ -9,7 +9,7 @@ class Food_Management:
         print("*                        Add Food                          *")
         print("============================================================")
         while True:
-            category=input("Enter Food Category: ").strip().title()
+            category=input("Enter Food Category (Chinese/Fast Food/Italian/North Indian/Beverage): ").strip().title()
             if len(category)>2:
                 if category.replace(" ","").isalpha():
                     break
@@ -136,7 +136,7 @@ class Food_Management:
                 print("============================================================")
                 count_food=0
                 while True:
-                    catetory=input("Enter Food Category: ").strip().title()
+                    catetory=input("Enter Food Category (Chinese/Fast Food/Italian/North Indian/Beverage): ").strip().title()
                     if len(catetory)>2:
                         if catetory.replace(" ","").isalpha():
                             break
@@ -261,7 +261,7 @@ class Food_Management:
                 print("============================================================")
                 delete_count=0
                 while True:
-                    category=input("Enter Food Category:").strip().title()
+                    category=input("Enter Food Category (Chinese/Fast Food/Italian/North Indian/Beverage):").strip().title()
                     if len(category)>2:
                         if category.replace(" ","").isalpha():
                             break

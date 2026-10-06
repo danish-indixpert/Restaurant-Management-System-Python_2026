@@ -71,7 +71,7 @@ class Order_Staff:
             total_amount=0
             while True:
                 while True:
-                    category=input("Enter Food Category: ").strip().title()
+                    category=input("Enter Food Category (Chinese/Fast Food/Italian/North Indian/Beverage): ").strip().title()
                     if len(category)>2:
                         if category.replace(" ","").isalpha():
                             break
