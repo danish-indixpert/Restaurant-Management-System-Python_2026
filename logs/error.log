@@ -13,3 +13,7 @@
 [2026-10-03 20:47:05.073412] [ERROR] - View All Bills - bill.json: File is not found
 [2026-10-06 20:01:16.605259] [ERROR] - View Order - order.json: File is not found
 [2026-10-07 10:19:31.603041] [ERROR] - Cancel Order - order.json - File is not found
+[2026-10-07 14:24:32.475878] [ERROR] - Cancelled Order - order.json: File is not found
+[2026-10-07 14:37:13.267299] [ERROR] - View Order - order.json: File is not found
+[2026-10-07 15:33:27.402499] [ERROR] - Update Order - order.json: File is not found
+[2026-10-07 15:56:19.779212] [ERROR] - Delete Order - order.json: File is not found

@@ -113,12 +113,12 @@ class Authentication:
                 print("*                                                   View Menu                                               *")
                 print("=============================================================================================================\n")
                 count=0
+                print("Staff ID                        Staff Name                       Email ID                            Password")
+                print("-------------------------------------------------------------------------------------------------------------")
                 for i in veiw_menu_data:
                     count+=1
-                    print("Staff ID                        Staff Name                       Email ID                            Password")
-                    print("-------------------------------------------------------------------------------------------------------------")
-                    print(str(count).ljust(2),str(i["id"]).ljust(30),str(i["name"]).ljust(27),str(i["email"]).ljust(40),str(i["password"]))
-                    print("-------------------------------------------------------------------------------------------------------------")
+                    print(str(count).ljust(2),str(i["id"]).ljust(30),str(i["name"]).ljust(27),str(i["email"]).ljust(34),str(i["password"]))
+                print("-------------------------------------------------------------------------------------------------------------")
                 if count==0:
                     with open("logs/war.log",'a') as staff_error:
                         staff_error.write(f"[{str(datetime.datetime.now())}] [WARNING] - View Staff - staff.json: Staff Data is not found\n")
@@ -133,23 +133,24 @@ class Authentication:
             with open("database/staff.json",'r') as file:
                 update_data=json.load(file)
             while True:
-                email_id=input("Enter Email ID & ID : ")
-                if email_id:
+                email=input("Enter Email ID & ID : ")
+                if email:
                     break
                 else:
                     with open("logs/war.log",'a') as invalid_email_error:
                         invalid_email_error.write(f"[{str(datetime.datetime.now())}] [WARNING] - Update Staff - Email ID or ID - Invalid Email ID & ID\n")
                     print("Invalid Email ID & ID")
+            found=0
             for update in update_data:
-                if update["email"]==email_id or update["id"]==email_id:
+                if update["email"]==email or update["id"]==email:
+                    found=1
                     while True:
                         print("================================")
                         print("--------- Update Menu ----------")
                         print("================================")
                         print("1. Name Update")
                         print("2. Password Update")
-                        print("3. Back")
-                        print("4. Exit")
+                        print("3. Exit")
                         update_choice=input("Enter Update Choice: ")
                         if update_choice=="1":
                             while True:
@@ -169,7 +170,7 @@ class Authentication:
                             with open("database/staff.json",'w') as name:
                                 json.dump(update_data,name,indent=4)
                             with open("logs/staff.log",'a') as name_log:
-                                name_log.write(f"[{str(datetime.datetime.now())}] [INFO]- Name Update Successful {email_id}\n")
+                                name_log.write(f"[{str(datetime.datetime.now())}] [INFO]- Name Update Successful {email}\n")
                             print("Name Update Successful")
                         elif update_choice=="2":
                             while True:
@@ -194,27 +195,22 @@ class Authentication:
                             with open("database/staff.json",'w') as password:
                                 json.dump(update_data,password,indent=4)
                             with open("logs/staff.log",'a') as password_log:
-                                password_log.write(f"[{str(datetime.datetime.now())}] [INFO]- Password Update Successful {email_id}\n")
+                                password_log.write(f"[{str(datetime.datetime.now())}] [INFO]- Password Update Successful {email}\n")
                             print("Password Update Successful")
                         elif update_choice=="3":
-                            with open("logs/staff.log",'a') as signin:
-                                signin.write(f"[{str(datetime.datetime.now())}] [INFO] - Program Back Successful {email_id}\n")
-                            print("Program Back Successful")
-                            self.main_menu()
-                        elif update_choice=="4":
                             with open("logs/staff.log",'a') as exit:
-                                exit.write(f"[{str(datetime.datetime.now())}] [INFO] - EXIT Program Close Successfully {email_id}\n")
+                                exit.write(f"[{str(datetime.datetime.now())}] [INFO] - EXIT Program Close Successfully {email}\n")
                             print("Restaurant Management System Close Successfully.")
                             break
                         else:
                             with open("logs/war.log",'a') as update_staff_choice:
                                 update_staff_choice.write(f"[{str(datetime.datetime.now())}] [WARNING] - Update Staff - Update - Invalid Your Update Choice\n")
                             print("Invalid Your Update Choice")
-                else:
-                    with open("logs/war.log",'a') as invalid_email:
-                        invalid_email.write(f"[{str(datetime.datetime.now())}] [WARNING] - Invalid Email ID {email_id}\n")
-                    print("Invalid Email ID")
-                    return
+            if found==0:
+                with open("logs/war.log",'a') as invalid_email:
+                    invalid_email.write(f"[{str(datetime.datetime.now())}] [WARNING] - Invalid Email ID {email}\n")
+                print("Invalid Email ID")
+                return
             else:
                 with open("logs/war.log",'a') as data_not_found:
                     data_not_found.write(f"[{str(datetime.datetime.now())}] [WARNING] - Staff Update - Data is no found\n")
@@ -229,6 +225,7 @@ class Authentication:
         try:
             with open("database/staff.json",'r') as delete:
                 delete_data=json.load(delete)
+                found=0
                 while True:
                     staff_email_id=input("Enter Email ID & ID: ")
                     if staff_email_id:
@@ -239,6 +236,7 @@ class Authentication:
                         print("Invalid Email ID & ID")
                 for data in delete_data:
                     if data["email"]==staff_email_id or data["id"]==staff_email_id:
+                        found=1
                         print("========================")
                         print("----- Staff Delete -----")
                         print("========================")
@@ -246,7 +244,7 @@ class Authentication:
                         print("2. Staff Delete Cancel")
                         print("3. Back")
                         print("4. Exit")
-                        yes_no=input("Staff Delete Please Reply Yes and No: ")
+                        yes_no=input("Staff Delete Please Reply: ")
                         if yes_no=="1":
                             delete_data.remove(data)
                             with open("database/staff.json",'w') as delete_staff:
@@ -273,7 +271,7 @@ class Authentication:
                             with open("logs/war.log",'a') as delete_choice:
                                 delete_choice.write(f"[{str(datetime.datetime.now())}] [WARNING] - Delete Staff - Delete - Invalid Your Delete Choice\n")
                             print("Invalid Your Delete Choice")
-                else:
+                if found==0:
                     with open("logs/war.log",'a') as invalid:
                         invalid.write(f"[{str(datetime.datetime.now())}] [WARNING] Invalid Email ID {staff_email_id}\n")
                     print("Invalid Email ID")

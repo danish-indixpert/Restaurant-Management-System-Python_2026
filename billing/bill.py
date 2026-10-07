@@ -126,7 +126,7 @@ class Bill_Management:
                     print("Order Status     : ",view["order_status"])
                     print("Date             : ",view["date"])
                     print("Time             : ",view["time"])
-                    print("________________________________________________________")
+                    print("___________________________________________________________")
                 if count==0:
                     with open("logs/war.log",'a') as bill_not:
                         bill_not.write(f"[{str(datetime.datetime.now())}] [WARNING] - View Bill - bill.json Bill Data is not found\n")
@@ -143,7 +143,9 @@ class Bill_Management:
                 count=0
                 for bill in bill_history_data:
                     count+=1
-                    print(f"-------------------- Bill{count} --------------------")
+                    print("===========================================================")
+                    print(f"                      Bill {count}                        ")
+                    print("===========================================================")
                     print("Bill ID          : ",bill["bill_id"])
                     print("Order ID         : ",bill["order_id"])
                     print("Customer Name    : ",bill["customer_name"])
@@ -159,7 +161,7 @@ class Bill_Management:
                     print("Payment Status   : ",bill["payment_status"])
                     print("Date             : ",bill["date"])
                     print("Time             : ",bill["time"])
-                    print("________________________________________________________")
+                    print("___________________________________________________________")
                 if count==0:
                     with open("logs/war.log",'a') as bill_history_not:
                         bill_history_not.write(f"[{str(datetime.datetime.now())}] [WARNING] - Bill History - bill.json: Bill Data is not found\n")
@@ -171,9 +173,9 @@ class Bill_Management:
             return
     def menu(self):
         while True:
-            print("==========================================")
-            print("*                Bill Menu               *")
-            print("==========================================")
+            print("===========================================================")
+            print("*                        Bill Menu                        *")
+            print("===========================================================")
             print("1. Generate Bill")
             print("2. View Bill")
             print("3. Bill History")

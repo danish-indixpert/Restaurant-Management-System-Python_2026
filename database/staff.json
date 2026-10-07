@@ -4,5 +4,17 @@
         "name": "danish",
         "email": "danish@gmail.com",
         "password": "123456"
+    },
+    {
+        "id": "S969a4ff4-",
+        "name": "shahid",
+        "email": "shahid@gmail.com",
+        "password": "shahid011"
+    },
+    {
+        "id": "S8bb6644d-",
+        "name": "aman",
+        "email": "aman@gmail.com",
+        "password": "aman11223344"
     }
 ]

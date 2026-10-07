@@ -225,3 +225,30 @@
 [2026-10-07 10:36:17.810791] [WARNING] - View Menu - table.json: Table Data is not found
 [2026-10-07 10:36:35.261791] [WARNING] - View Menu - table.json: Table Data is not found
 [2026-10-07 10:51:22.584147] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 15:56:35.332680] [WARNING] - Create Order - Category - Invalid Food Category
+[2026-10-07 16:01:01.917390] [WARNING] - Delete Order - Invalid Your Choice
+[2026-10-07 16:02:16.508818] [WARNING] - Create Order - Category - Invalid Food Category
+[2026-10-07 16:18:36.687823] [WARNING] - Create Order - Category - Invalid Food Category
+[2026-10-07 19:46:14.875636] [WARNING] - Invalid Email ID bhupendra@gmail.com
+[2026-10-07 19:47:12.709643] [WARNING] - Invalid Email ID bhupendra@gmail.com
+[2026-10-07 19:48:55.530473] [WARNING] - Invalid Email ID S1473048a-
+[2026-10-07 19:53:47.791024] [WARNING] - Invalid Email ID bhupendra@gmail.com
+[2026-10-07 19:59:05.988962] [WARNING] - Invalid Email ID bhupendra@gmail.com
+[2026-10-07 19:59:23.629169] [WARNING] - Staff Update - Data is no found
+[2026-10-07 19:59:30.036319] [WARNING] - Invalid Email ID shahid@gmail.com
+[2026-10-07 20:01:13.083526] [WARNING] - Invalid Email ID aman@gmail.com
+[2026-10-07 20:06:25.604671] [WARNING] - Staff Update - Data is no found
+[2026-10-07 20:06:33.703183] [WARNING] - Staff Update - Data is no found
+[2026-10-07 20:06:40.439090] [WARNING] - Invalid Email ID ayan@gmail.com
+[2026-10-07 20:07:27.301593] [WARNING] - Invalid Email ID bhupendraa@gmail.com
+[2026-10-07 20:07:37.048648] [WARNING] - Invalid Email ID bhupendra
+[2026-10-07 20:07:43.975779] [WARNING] - Invalid Email ID bhupendra
+[2026-10-07 20:08:13.844298] [WARNING] - Update Staff - New Password - Alpha Number Value Only
+[2026-10-07 20:08:56.310136] [WARNING] - Staff Update - Data is no found
+[2026-10-07 20:10:26.961192] [WARNING] - Update Staff - New Password - Password must be at leasts 6 Digit
+[2026-10-07 20:10:30.061587] [WARNING] - Update Staff - New Password - Password must be at leasts 6 Digit
+[2026-10-07 20:10:33.323902] [WARNING] - Update Staff - New Password - Alpha Number Value Only
+[2026-10-07 20:11:41.031320] [WARNING] - Staff Update - Data is no found
+[2026-10-07 20:14:03.031953] [WARNING] Invalid Email ID bhupendra@gmail.com
+[2026-10-07 20:17:09.572407] [WARNING]- Invalid Email and Password: admin@gmail.com
+[2026-10-07 20:42:12.613743] [WARNING] - Order History - order.json: Order Data is not found

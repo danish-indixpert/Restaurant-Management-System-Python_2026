@@ -12,7 +12,7 @@ class Admin_Menu:
     def admin_menu(self):
         while True:
             print("==============================================")
-            print("*              Menu Management               *")
+            print("*              Admin Dashboard               *")
             print("==============================================")
             print("1. Food Management")
             print("2. Table Management")

@@ -66,6 +66,9 @@ class Order_Staff:
                             print("Table is Already Booked")
                             return
                         elif table["status"]=="Available":
+                            table["status"]="Booked"
+                            with open("database/table.json",'w') as status:
+                                json.dump(table_data,status,indent=4)
                             break
             order_items=[]
             total_amount=0
@@ -127,6 +130,8 @@ class Order_Staff:
                     size="Full Size Price"
                     price=food["full_size_price"]
                 else:
+                    with open("logs/war.log",'a') as half_size:
+                        half_size.write(f"[{str(datetime.now())}] [WARNING] - Create Order - Food Size Choice - Invalid Your Food Size Choice\n")
                     print("Invalid Your Food Size Choice")
                     return
                 while True:
@@ -162,7 +167,9 @@ class Order_Staff:
                 elif food_selection=="No":
                     break
                 else:
-                    print("Invalid Choice")
+                    with open("logs/war.log",'a') as selection:
+                        selection.write(f"[{str(datetime.now())}] [WARNING] - Create Order - Food Selection Yes/No - Invalid Your Choice\n")
+                    print("Invalid Your Choice")
                     break
             order_id="O" + str(uuid.uuid4())[:3]
             date=datetime.now().strftime("%d-%m-%Y")
@@ -176,7 +183,7 @@ class Order_Staff:
                 "total_amount":total_amount,
                 "payment_method":"Pending",
                 "payment_status":"Pending",
-                "order_status":"Pending",
+                "order_status":"Complete",
                 "date":str(date),
                 "time":str(time)
             }
@@ -201,7 +208,7 @@ class Order_Staff:
             print("Customer Name : ",customer_name)
             print("Table ID      : ",table_id)
             print("Total Amount  : ","₹" + str(total_amount))
-            print("Order Status  : ","Pending")
+            print("Order Status  : ","Complete")
         except FileNotFoundError:
             with open("logs/error.log",'a') as file_not_found:
                 file_not_found.write(f"[{str(datetime.now())}] [ERROR] - Create Order - food.json: File is not found\n")
@@ -239,50 +246,6 @@ class Order_Staff:
         except FileNotFoundError:
             with open("logs/error.log",'a') as error_not_found:
                 error_not_found.write(f"[{str(datetime.now())}] [ERROR] - View Order - order.json: File is not found\n")
-            print("Data is not found")
-            return
-    def update_order(self):
-        try:
-            with open("database/order.json",'r') as update:
-                update_data=json.load(update)
-            while True:
-                order_id=input("Enter Order ID: ")
-                if order_id.isalnum():
-                    break
-                else:
-                    with open("logs/war.log",'a') as order_error:
-                        order_error.write(f"[{str(datetime.now())}] [WARNING] - Update Order - Order ID - Alpha Number Value Only\n")
-                    print("Alpha Number Value Only")
-            for i in update_data:
-                if i["order_id"]==order_id:
-                    print("============================================================")
-                    print("*                      Status Menu                         *")
-                    print("============================================================")
-                    print("1. Pending")
-                    print("2. Complete")
-                    print("3. Cancelled")
-                    status_choice=input("Enter Status Choice: ")
-                    if status_choice=="1":
-                        i["order_status"]="Pending"
-                    elif status_choice=="2":
-                        i["order_status"]="Complete"
-                    elif status_choice=="3":
-                        i["order_status"]="Cancelled"
-                    else:
-                        print("Invalid Your Order Status Choice")
-                        return           
-                    with open("database/order.json",'w') as update_status:
-                        json.dump(update_data,update_status,indent=4)
-                    print("Order Update Successful")
-                    return                 
-            else:
-                with open("logs/war.log",'a') as update_error:
-                    update_error.write(f"[{str(datetime.now())}] [WARNING] - Update Order - order.json: Order Data is not found\n")
-                print("Order not found")
-                return
-        except FileNotFoundError:
-            with open("logs/error.log",'a') as error_not_found:
-                error_not_found.write(f"[{str(datetime.now())}] [ERROR] - Update Order - order.json: File is not found")
             print("Data is not found")
             return
     def cancel_order(self):
@@ -323,85 +286,15 @@ class Order_Staff:
                 cancel_order_error.write(f"[{str(datetime.now())}] [ERROR] - Cancel Order - order.json - File is not found\n")
             print("Data is not found")
             return
-    def view_pending_order(self):
-        try:
-            with open("database/order.json",'r') as pending_order:
-                view_pending_order_data=json.load(pending_order)
-                user=0
-                for i in view_pending_order_data:
-                    if i["order_status"]=="Pending":
-                        user+=1
-                        print("============================================================")
-                        print(f"*                View Pending Order {user}                *")
-                        print("============================================================")
-                        print("Order ID         : ",i["order_id"])
-                        print("Customer ID      : ",i["customer_id"])
-                        print("Customer Name    : ",i["customer_name"])
-                        print("Table ID         : ",i["table_id"])
-                        for item in i["order_items"]:
-                            print("Category         : ", item["category"])
-                            print("Food Name        : ", item["food_name"])
-                            print("Size             : ", item["size"])
-                            print("Price            : ", "₹" + str(item["price"]))
-                            print("Quantity         : ", item["quantity"])
-                            print("Total Amount     : ", "₹" + str(item["total_amount"]))
-                        print("Grand Total      : ", "₹" + str(i["total_amount"]))
-                        print("Order Status     : ",i["order_status"])
-                        print("Date             : ",i["date"])
-                        print("Time             : ",i["time"])
-                        print("________________________________________________________")
-                if user==0:
-                    with open("logs/war.log",'a') as view_pending_error:
-                        view_pending_error.write(f"[{str(datetime.now())}] [WARNING] - View Pending Order - order.json: Data is not found\n")
-                    print("Data is not found")                        
-        except FileNotFoundError:
-            with open("logs/error.log",'a') as view_pending:
-                view_pending.write(f"[{str(datetime.now())}] [ERROR] - View Pending Order - order.json: File is not found\n")
-            print("Data is not found")
-            return
-    def view_complete_order(self):
-        try:
-            with open("database/order.json",'r') as complete_order:
-                view_complete_order_data=json.load(complete_order)
-                user=0
-                for i in view_complete_order_data:
-                    if i["order_status"]=="Complete":
-                        user+=1
-                        print("==============================================================================")
-                        print(f"*                        View Complete Order {user}                         *")
-                        print("==============================================================================")
-                        print("Order ID         : ",i["order_id"])
-                        print("Customer ID      : ",i["customer_id"])
-                        print("Customer Name    : ",i["customer_name"])
-                        print("Table ID         : ",i["table_id"])
-                        for item in i["order_items"]:
-                            print("Category         : ", item["category"])
-                            print("Food Name        : ", item["food_name"])
-                            print("Size             : ", item["size"])
-                            print("Price            : ", "₹" + str(item["price"]))
-                            print("Quantity         : ", item["quantity"])
-                            print("Total Amount     : ", "₹" + str(item["total_amount"]))
-                        print("Grand Total      : ", "₹" + str(i["total_amount"]))
-                        print("Order Status     : ",i["order_status"])
-                        print("Date             : ",i["date"])
-                        print("Time             : ",i["time"])
-                        print("________________________________________________________")
-                if user==0:
-                    with open("logs/war.log",'a') as complete_error:
-                        complete_error.write(f"[{str(datetime.now())}] [WARNING] - View Complete Order - order.json: Order Data is not found\n")
-                    print("Order Data is not found")
-        except FileNotFoundError:
-            with open("logs/error.log",'a') as complete_order_error:
-                complete_order_error.write(f"[{str(datetime.now())}] [ERROR] - View Complete Order - order.json: File is not found\n")
-            print("Data is not found")
-            return
     def order_history(self):
         try:
             with open("database/order.json",'r') as history:
                 order_history_data=json.load(history)
                 user=0
+                found=0
                 for order in order_history_data:
                     user+=1
+                    found=1
                     print("==============================================================================")
                     print(f"*                                Order {user}                               *")
                     print("==============================================================================")
@@ -422,8 +315,8 @@ class Order_Staff:
                     print("Order Status     : ",order["order_status"])
                     print("Date             : ",order["date"])
                     print("Time             : ",order["time"])
-                    print("________________________________________________________")
-                else:
+                    print("______________________________________________________________________________")
+                if found==0:
                     with open("logs/war.log",'a') as order_history_error:
                         order_history_error.write(f"[{str(datetime.now())}] [WARNING] - Order History - order.json: Order Data is not found\n")
                     print("Order Data is not found")
@@ -431,6 +324,33 @@ class Order_Staff:
             with open("logs/error.log",'a') as history_error:
                 history_error.write(f"[{str(datetime.now())}] [ERROR] - Order History - order.json: File is not found\n")
             print("Data is not found")
+            return
+    def view_food_menu(self):
+        try:
+            with open("database/food.json",'r') as file:
+                food_data=json.load(file)
+            print("------------------------------------------------------------------------------------------------------------")
+            print("============================================================================================================")
+            print("*                                               View Menu                                                  *")
+            print("============================================================================================================\n")
+            for category,user in food_data.items():
+                count=0
+                print(f"\n\n                                            ||-+-{category}-+-||                                        ")
+                print("------------------------------------------------------------------------------------------------------------")
+                print("Food Name                                    Half Size Price                                 Full Size Price")
+                print("------------------------------------------------------------------------------------------------------------")
+                for food in user:
+                    count+=1
+                    print(
+                        str(count).ljust(2),food["food_name"].ljust(48) +
+                        ("₹" + str(food["half_size_price"])).ljust(48) +
+                        ("₹" + str(food["full_size_price"])).ljust(15)
+                    )
+                print("____________________________________________________________________________________________________________")
+        except FileNotFoundError:
+            with open("logs/error.log",'a') as view_food:
+                view_food.write(f"[{str(datetime.datetime.now())}] [ERROR] View Food - food.json: File is not found\n")
+            print("Data is Not Found")
             return
     def table_booking(self):
         try:
@@ -639,13 +559,13 @@ class Order_Staff:
                 error_log.write(f"[{str(datetime.now())}] [ERROR] - Veiw Booked Table - table.json: File is not found\n")
             print("Data is not found")
             return
-    def view_menu(self):
+    def view_table_menu(self):
         try:
             with open("database/table.json",'r') as view:
                 view_menu_data=json.load(view)
             count=0
             print("=====================================================================================================================")
-            print("*                                                  View Booked Table                                                *")
+            print("*                                                      View Table                                                   *")
             print("=====================================================================================================================\n")
             for view_type,user in view_menu_data.items():
                 table_count=0
@@ -674,8 +594,7 @@ class Order_Staff:
             print("1. Table Booking")
             print("2. Cancel Table Booking")
             print("3. View Booked Table")
-            print("4. Table Menu")
-            print("5. Back")
+            print("4. Back")
             choice=input("Enter Your Choice: ")
             if choice=="1":
                 self.table_booking()
@@ -684,8 +603,6 @@ class Order_Staff:
             elif choice=="3":
                 self.veiw_booked_table()
             elif choice=="4":
-                self.view_menu()
-            elif choice=="5":
                 print("Program Back Successful")
                 break
             else:
@@ -693,39 +610,36 @@ class Order_Staff:
     def menu(self):
         while True:
             print("===========================================================")
-            print("*                    Order Staff Menu                     *")
+            print("*                     Staff Dashboard                     *")
             print("===========================================================")
             print("1. Create Order")
             print("2. View Order")
-            print("3. Update Order")
-            print("4. Cancel Order")
-            print("5. View Pending Order")
-            print("6. View Complete Order")
-            print("7. Order History")
-            print("8. Bills")
-            print("9. Table Book")
-            print("10. Back")
+            print("3. Cancel Order")
+            print("4. View Food Menu")
+            print("5. View Table Menu")
+            print("6. Order History")
+            print("7. Bills")
+            print("8. Table Book")
+            print("9. Back")
             choice=input("Enter Your Choice: ")
             if choice=="1":
                 self.create_order()
             elif choice=="2":
                 self.view_order()
             elif choice=="3":
-                self.update_order()
-            elif choice=="4":
                 self.cancel_order()
-            elif choice=="5":
-                self.view_pending_order()
+            elif choice=="4":
+                self.view_food_menu()
+            elif  choice=="5":
+                self.view_table_menu()
             elif choice=="6":
-                self.view_complete_order()
-            elif choice=="7":
                 self.order_history() 
-            elif choice=="8":
+            elif choice=="7":
                 obj=Bill_Management()
                 obj.menu()
-            elif choice=="9":
+            elif choice=="8":
                 self.table_menu()
-            elif choice=="10":
+            elif choice=="9":
                 print("Program Back Successful.")
                 break         
             else:
