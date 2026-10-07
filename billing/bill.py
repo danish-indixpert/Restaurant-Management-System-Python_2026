@@ -54,9 +54,12 @@ class Bill_Management:
                                     payment.write(f"[{str(datetime.datetime.now())}] [WARNING] - Generate Bill - Payment Method - Invalid Your Payment Method Choice\n")
                                 print("Invalid Your Payment Method Choice")
                                 return
+                            discount=10
+                            discount_amount=order["total_amount"]*discount/100
+                            after_discount=order["total_amount"]-discount_amount
                             gst="5%"
-                            gst_amount=order["total_amount"]*5/100
-                            total_amount=order["total_amount"]+gst_amount
+                            gst_amount=after_discount*5/100
+                            total_amount=after_discount+gst_amount
                             bill={
                                 "bill_id":bill_id,
                                 "order_id":order["order_id"],
@@ -64,8 +67,8 @@ class Bill_Management:
                                 "customer_name":order["customer_name"],
                                 "table_id":order["table_id"],
                                 "order_items":order["order_items"],
+                                "discount":discount,
                                 "gst":gst,
-                                "gst_amount":gst_amount,
                                 "total_amount":total_amount,
                                 "payment_method":payment_method,
                                 "payment_status":payment_status,
@@ -115,6 +118,7 @@ class Bill_Management:
                         print("Price            : ","₹" + str(item["price"]))
                         print("Quantity         : ",item["quantity"])
                         print("Total Amount     : ","₹" + str(item["total_amount"]))
+                    print("Discount         : ",str(view["discount"]) + "%")
                     print("GST              : ",view["gst"])
                     print("Total Amount     : ", "₹" + str(view["total_amount"]))
                     print("Payment Method   : ",view["payment_method"])
@@ -148,6 +152,7 @@ class Bill_Management:
                         print("Size             : ",item["size"])
                         print("Quantity         : ",item["quantity"])
                         print("Total Amount     : ","₹" + str(item["total_amount"]))
+                    print("Discount         : ",str(bill["discount"]) + "%")
                     print("GST              : ",bill["gst"])
                     print("Total Amount     : ",bill["total_amount"])
                     print("Payment Method   : ",bill["payment_method"])

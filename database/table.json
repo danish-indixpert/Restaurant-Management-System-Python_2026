@@ -150,7 +150,7 @@
             "table_id": "T992",
             "table_type": "Medium",
             "table_capacity": 6,
-            "status": "Booked"
+            "status": "Available"
         },
         {
             "table_id": "T5b2",
@@ -350,7 +350,7 @@
             "table_id": "T705",
             "table_type": "Vip",
             "table_capacity": 10,
-            "status": "Booked"
+            "status": "Available"
         },
         {
             "table_id": "T159",
@@ -365,18 +365,5 @@
             "status": "Available"
         }
     ],
-    "Booking_Table": [
-        {
-            "table_id": "T705",
-            "table_type": "Vip",
-            "table_capacity": 10,
-            "customer_id": "C65d3dbc5-",
-            "customer_name": "danish",
-            "date": "06-10-2026",
-            "start_time": "02:00 pm",
-            "duration": 3,
-            "end_time": "06-10-2026 05:00 PM",
-            "status": "Booked"
-        }
-    ]
+    "Booking_Table": []
 }

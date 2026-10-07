@@ -438,7 +438,7 @@ class Order_Staff:
                 table_data = json.load(table_file)
             print("=============================================================================================================")
             print("*                                                Table Book                                                 *")
-            print("=============================================================================================================")
+            print("=============================================================================================================\n")
             table_count = 0
             print("Table ID                       Table Type                         Table Capacity                       Status")
             print("-------------------------------------------------------------------------------------------------------------")
@@ -620,6 +620,9 @@ class Order_Staff:
         try:
             with open("database/table.json",'r') as file:
                 view_booked_table_data=json.load(file)
+            print("=====================================================================================================================")
+            print("*                                                  View Booked Table                                                *")
+            print("=====================================================================================================================\n")
             print("Table ID               Customer Name                 Booking Date                 Start Time                 End Time")
             print("---------------------------------------------------------------------------------------------------------------------")
             table_count=0
@@ -636,6 +639,33 @@ class Order_Staff:
                 error_log.write(f"[{str(datetime.now())}] [ERROR] - Veiw Booked Table - table.json: File is not found\n")
             print("Data is not found")
             return
+    def view_menu(self):
+        try:
+            with open("database/table.json",'r') as view:
+                view_menu_data=json.load(view)
+            count=0
+            print("=====================================================================================================================")
+            print("*                                                  View Booked Table                                                *")
+            print("=====================================================================================================================\n")
+            for view_type,user in view_menu_data.items():
+                table_count=0
+                print("---------------------------------------------------------------------------------------------------------------------")
+                print(f"                                                     * {view_type} *                                                ")
+                print("---------------------------------------------------------------------------------------------------------------------")
+                print("Table ID                             Table Type                            Capacity                            Status")
+                print("---------------------------------------------------------------------------------------------------------------------")
+                for table in user:
+                    count+=1
+                    table_count+=1
+                    print(str(table_count).ljust(3) + str(table["table_id"]).ljust(35),table["table_type"].ljust(39) +str(table["table_capacity"]).ljust(29),str(table["status"]))
+            if count==0:
+                with open("logs/war.log",'a') as war:
+                    war.write(f"[{str(datetime.now())}] [WARNING] - View Menu - table.json: Table Data is not found\n")
+                print("Table Data is not found")
+        except FileNotFoundError:
+            with open("logs/war.log") as view_error:
+                view_error.write(f"[{str(datetime.now)}] [WARNING] - View Menu - table.json: File is not found\n")
+            print("Data is not found")
     def table_menu(self):
         while True:
             print("===========================================================")
@@ -644,7 +674,8 @@ class Order_Staff:
             print("1. Table Booking")
             print("2. Cancel Table Booking")
             print("3. View Booked Table")
-            print("4. Back")
+            print("4. Table Menu")
+            print("5. Back")
             choice=input("Enter Your Choice: ")
             if choice=="1":
                 self.table_booking()
@@ -653,6 +684,8 @@ class Order_Staff:
             elif choice=="3":
                 self.veiw_booked_table()
             elif choice=="4":
+                self.view_menu()
+            elif choice=="5":
                 print("Program Back Successful")
                 break
             else:

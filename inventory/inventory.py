@@ -45,7 +45,6 @@ class Inventory:
                     with open("logs/war.log",'a') as greater_error:
                         greater_error.write(f"[{str(datetime.now())}] [WARNING] - Add Inventory - Inventory Quantity - Quantity 0 to Greater\n")
                     print("Quantity 0 to Greater")
-
             else:
                 with open("logs/war.log",'a') as unit_error:
                     unit_error.write(f"[{str(datetime.now())}] [WARNING] - Add Inventory - Inventory Unit - Alpha Number Value Only\n")
@@ -92,15 +91,19 @@ class Inventory:
         try:
             with open("database/inventory.json",'r') as view_inventory_file:
                 view_inventory_data=json.load(view_inventory_file)
-            print("=============================================================================================================")
-            print("*                                                   View Menu                                               *")
-            print("=============================================================================================================\n")
+            print("=============================================================================================================================")
+            print("*                                                          View Menu                                                        *")
+            print("=============================================================================================================================\n")
             count=0
-            print("Inventory Name                 Category                  Quantity                 Unit                 Status")
-            print("-------------------------------------------------------------------------------------------------------------")
+            print("Inventory ID              Inventory Name              Category               Quantity               Unit               Status")
+            print("-----------------------------------------------------------------------------------------------------------------------------")
             for view in view_inventory_data:
                 count+=1
-                print(str(count).ljust(2),view["inventory_name"].ljust(29) +str(view["inventory_category"]).ljust(25),str(view["inventory_quantity"]).ljust(24),str(view["inventory_unit"]).ljust(17),str(view["inventory_stock_status"]))
+                print(str(count).ljust(2),view["inventory_id"].ljust(28) +str(view["inventory_name"]).ljust(24) +str(view["inventory_category"]).ljust(23),str(view["inventory_quantity"]).ljust(21),str(view["inventory_unit"]).ljust(14),str(view["inventory_stock_status"]))
+            if count==0:
+                with open("logs/war.log",'a') as found_table:
+                    found_table.write(f"[{str(datetime.now())}] [WARNING] - View Inventory - inventory.json: Inventory Data is not found\n")
+                print("Inventory Data is not found")
         except FileNotFoundError:
             with open("logs/error.log",'a') as veiw_error:
                 veiw_error.write(f"[{str(datetime.now())}] [ERROR] - View Inventory - inventory.json: File is not found\n")
@@ -316,16 +319,18 @@ class Inventory:
                 print("*                                            Low Stock Inventory                                            *")
                 print("=============================================================================================================\n")
                 count_inventory=0
-                print("Inventory Name                 Category                  Quantity                  Unit                Status")
+                print("Inventory ID:         Inventory Name           Category            Quantity            Unit            Status")
                 print("-------------------------------------------------------------------------------------------------------------")
+                
                 for low_stock in low_stock_inventory_data:
                     if low_stock["inventory_quantity"] > 0 and low_stock["inventory_quantity"] <=1:
                         count_inventory+=1
                         print(
-                            str(count_inventory).ljust(4) + str(low_stock["inventory_name"]).ljust(27),
-                            str(low_stock["inventory_category"]).ljust(25),
-                            str(low_stock["inventory_quantity"]).ljust(25),
-                            str(low_stock["inventory_unit"]).ljust(16),
+                            str(count_inventory).ljust(3) + str(low_stock["inventory_id"]).ljust(23),
+                            str(low_stock["inventory_name"]).ljust(20),
+                            str(low_stock["inventory_category"]).ljust(20),
+                            str(low_stock["inventory_quantity"]).ljust(17),
+                            str(low_stock["inventory_unit"]).ljust(12),
                             str(low_stock["inventory_stock_status"])
                         )   
                 if count_inventory==0:

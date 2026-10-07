@@ -111,3 +111,12 @@ json
 stdiomask
 datetime
 uuid
+
+
+
+## Validation
+replace
+islpha
+isalnum
+strip
+title

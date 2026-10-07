@@ -68,6 +68,7 @@ class Table_Management:
         try:
             with open("database/table.json",'r') as file:
                 table_data=json.load(file)
+            table_count=0
             print("============================================================================================================")
             print("*                                                View Menu                                                 *")
             print("============================================================================================================\n")
@@ -76,12 +77,17 @@ class Table_Management:
                 print("------------------------------------------------------------------------------------------------------------")
                 print(f"                                                  {table_type}                                             ")
                 print("------------------------------------------------------------------------------------------------------------")
-                print("Table Type                                    Table Capacity                                          Status")
+                print("Table ID                      Table Type                         Table Capacity                       Status")
                 print("------------------------------------------------------------------------------------------------------------")
                 for table in user:
                     count+=1
-                    print(str(count).ljust(4) + table["table_type"].ljust(48) + str(table["table_capacity"]).ljust(47) + str(table["status"]))
+                    table_count+=1
+                    print(str(count).ljust(3),table["table_id"].ljust(27),table["table_type"].ljust(39) +str(table["table_capacity"]).ljust(27),str(table["status"]))
                 print("____________________________________________________________________________________________________________\n\n\n")
+            if table_count==0:
+                with open("logs/war.log",'a') as table_error:
+                    table_error.write(f"[{str(datetime.datetime.now())}] [WARNING] -  View Table - table.json: Table Data is not found\n")
+                print("Table Data is not found")
         except FileNotFoundError:
             with open("logs/error.log",'a') as veiw_table:
                 veiw_table.write(f"[{str(datetime.datetime.now())}] [ERROR] View Table tabale.json: File is not found\n")

@@ -205,3 +205,23 @@
 [2026-10-06 11:44:20.565936] [WARNING] - Create Order - Food not found
 [2026-10-06 11:46:35.788121] [WARNING] - Table Booking - Invalid Time
 [2026-10-06 11:53:37.211493] [WARNING] - Table Booking - Table is Already Booked
+[2026-10-06 20:00:21.690010] [WARNING] - Cancel Table Booking - Table ID - Alpha Number Value Only
+[2026-10-06 20:00:34.757383] [WARNING] - View Booked Table - table.json: Table Data is not found
+[2026-10-06 20:28:20.252554] [WARNING] - View Booked Table - table.json: Table Data is not found
+[2026-10-07 09:56:08.299399] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 09:57:41.556446] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 09:58:04.495281] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 09:58:25.991548] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 09:59:41.946003] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:01:28.620140] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:01:48.883877] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:02:10.192925] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:03:41.420782] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:04:57.367460] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:05:30.203860] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:06:20.950267] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:23:34.404800] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:35:51.781757] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:36:17.810791] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:36:35.261791] [WARNING] - View Menu - table.json: Table Data is not found
+[2026-10-07 10:51:22.584147] [WARNING] - View Menu - table.json: Table Data is not found
