@@ -33,6 +33,8 @@ Add Table
 View Menu
 Update Table 
 Delete Table
+Table Booking
+Cancel Table Booking
 
 
 
@@ -49,10 +51,9 @@ Out of Stock Inventory
 ## Order Management/Staff
 Create Order
 View Order
-Update Order
 Cancel Order
-View Pending Order
-View Complete Order
+View Food Menu
+View Table Menu
 Order History
 Bills
 Table Book
@@ -64,6 +65,8 @@ View All Order
 Search Order
 Sales Report
 Cancelled Order
+Create Order
+Delete Order
 
 
 
