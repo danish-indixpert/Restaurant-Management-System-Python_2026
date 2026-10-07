@@ -162,3 +162,5 @@ class Order_Admin:
                 break
             else:
                 print("Invalid Your Choice")
+# obj=Order_Admin()
+# obj.menu()
