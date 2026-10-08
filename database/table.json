@@ -302,7 +302,7 @@
             "table_id": "Tb40",
             "table_type": "Vip",
             "table_capacity": 10,
-            "status": "Booked"
+            "status": "Available"
         },
         {
             "table_id": "T5da",
@@ -365,18 +365,5 @@
             "status": "Booked"
         }
     ],
-    "Booking_Table": [
-        {
-            "table_id": "Tb40",
-            "table_type": "Vip",
-            "table_capacity": 10,
-            "customer_id": "C1e68787d-",
-            "customer_name": "danish",
-            "date": "07-10-2026",
-            "start_time": "07:00 pm",
-            "duration": 3,
-            "end_time": "07-10-2026 10:00 PM",
-            "status": "Booked"
-        }
-    ]
+    "Booking_Table": []
 }
