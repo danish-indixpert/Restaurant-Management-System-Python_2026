@@ -9,19 +9,29 @@ class Authentication:
     def signup(self):
         while True:
             name=input("Enter Your Name: ").strip()
-            if name.replace(" ","").isalpha():
-                break
+            if len(name):
+                if name.replace(" ","").isalpha():
+                    break
+                else:
+                    with open("logs/war.log",'a') as name_error:
+                        name_error.write(f"[{str(datetime.datetime.now())}] [WARNING] - Sighup Staff - Name - Alpha Value Only\n") 
+                    print("Only Alphabet")
             else:
-                with open("logs/war.log",'a') as name_error:
-                    name_error.write(f"[{str(datetime.datetime.now())}] [WARNING] - Sighup Staff - Name - Alpha Value Only\n") 
-                print("Only Alphabet")
+                with open("logs/war.log",'a') as name__error:
+                    name__error.write(f"[{str(datetime.datetime.now())}] [WARNING] - Sighup Staff - Email - Invalid Email Name\n") 
+                print("Invalid Your Name")
         while True:
             email=input("Enter Your Email ID: ")
-            if "@" in email and ".com" in email:
-                break
+            if len(email)>6:
+                if "@" in email and ".com" in email:
+                    break
+                else:
+                    with open("logs/war.log",'a') as email_error:
+                        email_error.write(f"[{str(datetime.datetime.now())}] [WARNING] - Sighup Staff - Email - Invalid Email\n") 
+                    print("Invalid Email ID")
             else:
-                with open("logs/war.log",'a') as email_error:
-                    email_error.write(f"[{str(datetime.datetime.now())}] [WARNING] - Sighup Staff - Email - Invalid Email\n") 
+                with open("logs/war.log",'a') as email_ror:
+                    email_ror.write(f"[{str(datetime.datetime.now())}] [WARNING] - Sighup Staff - Email - Invalid Email\n") 
                 print("Invalid Email ID")
         while True:
             try:
